@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="icon" href="profil.png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e6e6f0;
+            margin: 0 20px;
+        }
+        
+        .container {
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            position: relative;
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .top {
+            position: relative;
+            text-align: center;
+        }
+        
+        .top img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        
+        .top p {
+            color: gray;
+            font-size: 18px;
+        }
+        
+        .top h1 {
+            font-weight: 400;
+            margin-top: 5px;
+        }
+        
+        .check {
+            position: absolute;
+            background-color: #2abf7b;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            border-radius: 50%;
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+            right: 50px;
+            top: 100px;
+        }
+        
+        .menu {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 4px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px;
+        }
+        
+        .menu__dot {
+            background-color: #cbcbcb;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+        }
+        
+        .flex-container {
+            margin-top: 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+        
+        .flex-container .item {
+            text-align: center;
+        }
+        
+        .flex-container .item h1 {
+            font-weight: 400;
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        
+        .flex-container .item p {
+            color: gray;
+            font-size: 16px;
+        }
+        
+        .desc {
+            color: gray;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            max-width: 300px;
+        }
+        
+        .icons {
+            margin-top: 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .icon {
+            background-color: #40b0f8;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        
+        .icon:nth-child(2) {
+            background-color: #3e5a9b;
+        }
+        
+        .icon:nth-child(3) {
+            background-color: #ff00bf;
+        }
+        
+        .icon:nth-child(4) {
+            background-color: #1768ff;
+        }
+        
+        .btn {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin: auto;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: rgb(250, 0, 0);
+            padding: 15px;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        .btn i {
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="top">
+                <img src="sn.jpg">
+                <h1>Samson Thibaut 💕</h1>
+                <p>Fullstack Developer</p>
+                <div class="check">
+                    <i class="ri-check-line"></i>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menu__dot"></div>
+                <div class="menu__dot"></div>
+                <div class="menu__dot"></div>
+            </div>
+
+            <div class="flex-container">
+
+                <div class="item">
+                    <p>Projects</p>
+                    <h1>11</h1>
+                </div>
+
+                <div class="item">
+                    <p>Following</p>
+                    <h1>50</h1>
+                </div>
+
+                <div class="item">
+                    <p>Followers</p>
+                    <h1>9k</h1>
+                </div>
+
+            </div>
+
+            <p class="desc">Passionné du developpement informatique et de l'analyse des données.</p>
+
+            <div class="icons">
+                <div class="icon">
+                    <i class="ri-twitter-fill"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-facebook-fill"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-instagram-fill"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+
+            <a class="btn" href="https://www.youtube.com/channel/UClqlTZZTzy9Qr36Z9hRgRtA" target="_blank">
+                <i class="ri-youtube-fill"></i> Subscribe now !
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Contenu de ce lien (<script src="https://thebravecoders.github.io/youtube-popup/brave.js"></script>) ci dessous :  -->
+
+    <script>
+        (() => {
+
+
+            const DOMString = `<div class="the-brave-coders__backdrop">
+                            <div class="the-brave-coders__popup">
+                                <a href="https://www.youtube.com/channel/UClqlTZZTzy9Qr36Z9hRgRtA" class="the-brave-coders__popup-header" target="_blank">
+                                    <i class="ri-youtube-fill the-brave-coders__btn-icon"></i>Samson Thibaut
+                                </a>
+    
+                                <h1 class="the-brave-coders__code-name">
+                                    <span class="the-brave-coders__code-name--span">Subscribe Our Youtube Channel</span>😋
+                                </h1>
+    
+                                <a href="https://www.youtube.com/channel/UClqlTZZTzy9Qr36Z9hRgRtA" class="the-brave-coders__link"
+                                    target="_blank">Click here for subscrire</a>
+                                <a href="#" class="the-brave-coders__ok-btn">Ok</a>
+                            </div>
+                        </div>`
+
+
+
+            const createLinkElementAndAppendInHead = (path) => {
+                const element = document.createElement('link');
+                element.href = `${path}`;
+                element.rel = 'stylesheet';
+                document.head.append(element);
+            }
+
+
+
+
+
+            createLinkElementAndAppendInHead('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+            createLinkElementAndAppendInHead('https://thebravecoders.github.io/youtube-popup/style.css');
+            document.body.insertAdjacentHTML('afterbegin', DOMString)
+
+
+            const btnOk = document.querySelector('.the-brave-coders__ok-btn');
+            btnOk.addEventListener('click', (e) => {
+                e.target.closest('.the-brave-coders__backdrop').remove();
+            });
+
+
+        })();
+    </script>
+
+
+</body>
+
+</html>
